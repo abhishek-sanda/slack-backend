@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd gateway && node app.js",
     "start:gateway": "cd gateway && nodemon app.js",
     "start:user": "cd services/user && nodemon app.js",
     "start:chat": "cd services/chat && nodemon app.js",
@@ -23,6 +24,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "http-proxy-middleware": "^3.0.5",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.16.0",
     "morgan": "^1.10.0",
