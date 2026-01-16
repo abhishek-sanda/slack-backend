@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:gateway": "cd gateway && nodemon app.js",
+    "start:user": "cd services/user && nodemon app.js",
+    "start:chat": "cd services/chat && nodemon app.js",
+    "start:meeting": "cd services/meeting && nodemon app.js",
+    "start:media": "cd services/media && nodemon app.js",
+    "start:ai": "cd services/ai && nodemon app.js",
+    "start:Meeting-services": "cd services/Meeting-services && nodemon app.js",
+    "start:all": "concurrently \"npm run start:gateway\" \"npm run start:user\" \"npm run start:chat\" \"npm run start:meeting\" \"npm run start:media\" \"npm run start:ai\" \"npm run start:Meeting-services\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.10",
+    "openai": "^5.7.0",
+    "path": "^0.12.7",
+    "string-width": "^7.2.0",
+    "websocket": "^1.0.35"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
