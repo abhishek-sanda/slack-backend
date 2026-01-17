@@ -34,7 +34,7 @@ function setupProxy(path, target, opts = {}) {
 
 // Proxy routes (use env vars or default values)
 setupProxy("/api/chat", process.env.CHAT_SERVICE_URL || "https://slack-backend-3mvw.onrender.com", { ws: true });
-setupProxy("/socket.io", process.env.CHAT_SERVICE_URL || "https://slack-backend-3mvw.onrender.com", { ws: true });
+setupProxy("/socket.io", process.env.CHAT_SOCKET_SERVICE_URL || "https://slack-backend-3mvw.onrender.com", { ws: true });
 setupProxy("/api/meetings", process.env.MEETING_SERVICE_URL || "https://slack-backend-3mvw.onrender.com");
 setupProxy("/api/media", process.env.MEDIA_SERVICE_URL || "https://slack-backend-3mvw.onrender.com");
 setupProxy("/api/ai", process.env.AI_SERVICE_URL || "https://slack-backend-3mvw.onrender.com");
