@@ -47,7 +47,7 @@ mongoose.connect(process.env.MONGO_URI)
 .catch((err) => console.error('MongoDB connection error:', err));
 
 app.use(cors({
-  origin: "http://localhost:5173", // allow your frontend's origin
+  origin: "https://slack-frontend-five.vercel.app", // allow your frontend's origin
   credentials: true                // if you use cookies/auth
 }));
 app.use(express.json());

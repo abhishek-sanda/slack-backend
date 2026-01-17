@@ -37,7 +37,6 @@ setupProxy("/api/meetings", process.env.MEETING_SERVICE_URL || "http://meeting:4
 setupProxy("/api/media", process.env.MEDIA_SERVICE_URL || "http://media:4003");
 setupProxy("/api/ai", process.env.AI_SERVICE_URL || "http://ai:4004");
 setupProxy("/api/user", process.env.USER_SERVICE_URL || "http://user:4005");
-setupProxy("/api/meetings", process.env.MEETING_URL || "http://meeting:4007");
 
 // Health check endpoint
 app.get("/health", (req, res) => res.json({ status: "ok" }));
