@@ -32,7 +32,8 @@ function setupProxy(path, target, opts = {}) {
 
 // Proxy routes (use env vars or default values)
 setupProxy("/api/chat", process.env.CHAT_SERVICE_URL || "http://chat:4001", { ws: true });
- setupProxy("/api/meetings", process.env.MEETING_SERVICE_URL || "http://meeting:4002");
+setupProxy("/socket.io", process.env.CHAT_SERVICE_URL || "http://chat:4001", { ws: true });
+setupProxy("/api/meetings", process.env.MEETING_SERVICE_URL || "http://meeting:4002");
 setupProxy("/api/media", process.env.MEDIA_SERVICE_URL || "http://media:4003");
 setupProxy("/api/ai", process.env.AI_SERVICE_URL || "http://ai:4004");
 setupProxy("/api/user", process.env.USER_SERVICE_URL || "http://user:4005");
