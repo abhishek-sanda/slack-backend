@@ -13,7 +13,7 @@
     "start:media": "cd services/media && nodemon app.js",
     "start:ai": "cd services/ai && nodemon app.js",
     "start:Meeting-services": "cd services/Meeting-services && nodemon app.js",
-    "start:all": "concurrently \"npm run start:gateway\" \"npm run start:user\" \"npm run start:chat\" \"npm run start:meeting\" \"npm run start:media\" \"npm run start:ai\" \"npm run start:Meeting-services\""
+    "start:all": "concurrently \"npm run start\" \"npm run start:gateway\" \"npm run start:user\" \"npm run start:chat\" \"npm run start:meeting\" \"npm run start:media\" \"npm run start:ai\" \"npm run start:Meeting-services\""
   },
   "keywords": [],
   "author": "",
