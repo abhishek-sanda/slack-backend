@@ -24,7 +24,7 @@ redisClient.connect().catch(console.error);
 
 app.use(cors(
   {
-    origin: process.env.CLIENT_URL,
+    origin: process.env.CLIENT_URL || "https://slack-frontend-five.vercel.app",
     credentials: true
   }
 ));
